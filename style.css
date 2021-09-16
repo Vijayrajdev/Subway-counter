@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100;0,200;0,400;0,600;1,100;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Glory", sans-serif;
+}
+
+body {
+  background-image: url("./assets/back1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content {
+  text-align: center;
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add_content {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.content_head {
+  color: #eaf4fc;
+  font-size: 40px;
+}
+
+.content_count {
+  color: #eaf4fc;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.incr,
+.save {
+  font-size: 20px;
+  font-weight: 400;
+  color: aliceblue;
+  text-transform: uppercase;
+}
+
+.primary {
+  background-color: crimson;
+  width: 60%;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin: 1rem 0;
+  transition: all 0.5s;
+}
+
+.secondary {
+  background-color: #005800;
+  width: 60%;
+  border-radius: 4px;
+  padding: 5px 10px;
+  transition: all 0.5s;
+}
+
+.entry {
+  font-size: 18px;
+  font-weight: 500;
+  color: aliceblue;
+}
+
+.previous_count {
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 0.7rem;
+  color: #eaf4fc;
+}
+
+.primary:hover {
+  background-color: #ec4163;
+}
+
+.secondary:hover {
+  background-color: #078307;
+}
+
+/* Responsive */
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("./assets/back.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 10em;
+  }
+
+  .wrapper {
+    width: 400px;
+    height: 280px;
+    background-color: #94a1a9;
+    padding: 25px 0;
+    border-radius: 70px 0;
+    opacity: 0.8;
+  }
+  .content_head {
+    color: #eaf4fc;
+  }
+
+  .content_count {
+    color: #eaf4fc;
+  }
+
+  .primary {
+    width: 40%;
+  }
+
+  .secondary {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .primary {
+    width: 35%;
+    padding: 10px;
+  }
+
+  .secondary {
+    width: 35%;
+    padding: 10px;
+  }
+}
